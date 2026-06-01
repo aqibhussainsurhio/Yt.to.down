@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Aqib ki Website</title>
+  <title>Aqii Edits</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
@@ -14,21 +14,17 @@
 
     /* NEON TITLE */
     .title{
-      font-size:50px;
+      font-size:45px;
       text-align:center;
-      margin-top:30px;
+      margin-top:25px;
       color:#0ff;
-      text-shadow:
-        0 0 5px #0ff,
-        0 0 20px #0ff,
-        0 0 40px #0ff,
-        0 0 80px #0ff;
+      text-shadow:0 0 10px #0ff,0 0 30px #0ff,0 0 60px #0ff;
       animation: glow 2s infinite alternate;
     }
 
     @keyframes glow{
-      from { text-shadow: 0 0 5px #0ff, 0 0 15px #0ff; }
-      to   { text-shadow: 0 0 10px #0ff, 0 0 50px #0ff; }
+      from{ text-shadow:0 0 5px #0ff,0 0 20px #0ff; }
+      to{ text-shadow:0 0 15px #0ff,0 0 60px #0ff; }
     }
 
     .container{
@@ -37,26 +33,36 @@
       padding:20px;
     }
 
-    /* MAIN BUTTON */
-    .main-link{
-      display:block;
-      text-align:center;
-      background:linear-gradient(90deg,#0ff,#00ff88);
+    /* SIDE MENU */
+    .menu-btn{
+      position:fixed;
+      top:15px;
+      left:15px;
+      background:#0ff;
       color:black;
-      padding:15px;
-      margin-top:20px;
-      border-radius:12px;
+      padding:10px;
+      border-radius:8px;
+      cursor:pointer;
       font-weight:bold;
+    }
+
+    .sidebar{
+      position:fixed;
+      top:0;
+      left:-260px;
+      width:250px;
+      height:100%;
+      background:#111;
+      padding:20px;
+      transition:0.3s;
+      overflow:auto;
+    }
+
+    .sidebar a{
+      display:block;
+      color:#0ff;
+      margin:10px 0;
       text-decoration:none;
-      font-size:18px;
-    }
-
-    .main-link:hover{
-      opacity:0.8;
-    }
-
-    .section{
-      margin-top:30px;
     }
 
     .card{
@@ -71,84 +77,97 @@
 
     .btn{
       background:#0ff;
-      color:#000;
-      padding:8px 15px;
+      color:black;
+      padding:7px 12px;
       border-radius:8px;
       text-decoration:none;
       font-weight:bold;
     }
 
-    .btn:hover{
-      background:#00cccc;
+    .section{
+      margin-top:30px;
     }
 
     h2{
       border-left:4px solid #0ff;
       padding-left:10px;
-      margin-top:40px;
     }
 
-    .search{
-      width:100%;
-      padding:12px;
+    .social a{
+      display:inline-block;
+      margin:10px;
+      padding:10px 15px;
+      background:#222;
+      color:#0ff;
       border-radius:10px;
-      border:none;
-      margin-top:20px;
-      font-size:16px;
+      text-decoration:none;
     }
-
   </style>
 </head>
 
 <body>
 
-  <div class="title">Aqib ki Website</div>
+<!-- MENU BUTTON -->
+<div class="menu-btn" onclick="toggleMenu()">☰ More Apps</div>
 
-  <div class="container">
+<!-- SIDEBAR -->
+<div class="sidebar" id="sidebar">
+  <h3>🎮 Open World Games</h3>
 
-    <!-- MAIN LINK -->
-    <a class="main-link" href="https://your-main-link.com">
-      🏠 MAIN PAGE / HOME LINK
-    </a>
+  <a href="https://www.mediafire.com/">GTA San Andreas (Link here)</a>
+  <a href="https://www.mediafire.com/">GTA Vice City (Link here)</a>
+  <a href="https://www.mediafire.com/">Minecraft APK (Link here)</a>
+  <a href="https://www.mediafire.com/">Car Simulator Game (Link here)</a>
+</div>
 
-    <input class="search" type="text" placeholder="Search files... (UI only)">
+<div class="title">Aqii Edits</div>
 
-    <!-- VIDEOS -->
-    <div class="section">
-      <h2>🎬 Videos</h2>
+<div class="container">
 
-      <div class="card">
-        <span>My Video 1</span>
-        <a class="btn" href="">Download</a>
-      </div>
-
-      <div class="card">
-        <span>My Video 2</span>
-        <a class="btn" href="YOUR_LINK_2">Download</a>
-      </div>
-    </div>
-
-    <!-- GAMES -->
-    <div class="section">
-      <h2>🎮 Games</h2>
-
-      <div class="card">
-        <span>Game File</span>
-        <a class="btn" href="https://drive.google.com/drive/folders/1dOtvS3ePFZynZgUQVuxIMz1Ftud4k6D7">Download</a>
-      </div>
-    </div>
-
-    <!-- APPS -->
-    <div class="section">
-      <h2>📱 Apps</h2>
-
-      <div class="card">
-        <span>App File</span>
-        <a class="btn" href="YOUR_LINK_4">Download</a>
-      </div>
-    </div>
-
+  <!-- SUPPORT -->
+  <div class="section">
+    <h2>🆘 Support Area</h2>
+    <p>
+      Welcome to Aqi Edits❤️<br>
+      If you enjoy the content, support me by following my social media.<br>
+      I upload cool videos, edits and more daily.
+    </p>
   </div>
+
+  <!-- SOCIAL -->
+  <div class="social">
+    <a href="https:"https://www.tiktok.com/@aqi_edits?_r=1&_t=ZS-96r44afxAZu">🎵 TikTok</a>
+    <a href="https://www.instagram.com/aqiiii_edits?igsh=MWg4eHI3MnhhOWlhag==">📸 Instagram</a>
+  </div>
+
+  <!-- APPS -->
+  <div class="section">
+    <h2>📱 Top 10 Apps</h2>
+
+    <div class="card"><span>App 1</span><a class="btn" href="#">Download</a></div>
+    <div class="card"><span>App 2</span><a class="btn" href="#">Download</a></div>
+    <div class="card"><span>App 3</span><a class="btn" href="#">Download</a></div>
+    <div class="card"><span>App 4</span><a class="btn" href="#">Download</a></div>
+    <div class="card"><span>App 5</span><a class="btn" href="#">Download</a></div>
+    <div class="card"><span>App 6</span><a class="btn" href="#">Download</a></div>
+    <div class="card"><span>App 7</span><a class="btn" href="#">Download</a></div>
+    <div class="card"><span>App 8</span><a class="btn" href="#">Download</a></div>
+    <div class="card"><span>App 9</span><a class="btn" href="#">Download</a></div>
+    <div class="card"><span>App 10</span><a class="btn" href="#">Download</a></div>
+  </div>
+
+</div>
+
+<script>
+function toggleMenu(){
+  var menu = document.getElementById("sidebar");
+  if(menu.style.left === "0px"){
+    menu.style.left = "-260px";
+  } else {
+    menu.style.left = "0px";
+  }
+}
+</script>
 
 </body>
 </html>
